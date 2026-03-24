@@ -1,1 +1,1 @@
-Predicto de precios de casas
+Predictor de precios de casas
