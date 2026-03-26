@@ -15,9 +15,12 @@ def mae(y_true, y_pred):
     return np.mean(np.abs(y_true - y_pred))
 
 
-# -------- R2 --------
-def r2_score(y_true, y_pred):
-    ss_res = np.sum((y_true - y_pred) ** 2)
-    ss_tot = np.sum((y_true - np.mean(y_true)) ** 2)
+def print_metrics(y_true, y_pred, title=""):
+    mse_val = mse(y_true, y_pred)
+    rmse_val = rmse(y_true, y_pred)
+    mae_val = mae(y_true, y_pred)
     
-    return 1 - (ss_res / ss_tot)
+    print(f"{title} - Metrics:")
+    print(f"  MSE: {mse_val:.2f}")
+    print(f"  MAE: {mae_val:.2f}")
+    print(f"  RMSE: {rmse_val:.2f}")

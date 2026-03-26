@@ -1,0 +1,5 @@
+numpy
+pandas
+matplotlib
+
+Some graph code structuring and visualization improvements were assisted by AI tools.
