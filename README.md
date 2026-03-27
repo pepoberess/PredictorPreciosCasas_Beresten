@@ -6,8 +6,6 @@ The objective is to evaluate how exploratory data analysis, feature engineering 
 
 `src/`
 
-Core implementation files:
-
 - `models.py`  
   Implementation of Linear Regression, Ridge (L2), and Lasso (L1)
 

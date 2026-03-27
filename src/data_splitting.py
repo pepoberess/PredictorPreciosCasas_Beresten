@@ -24,7 +24,7 @@ def split_data(data):
     return train, val
 
 def cross_val(data, features, target="precio", k=5, L1=0, L2=0):
-    """K-fold cross-validation with per-fold normalization; returns mean and std of MSE across folds."""
+    """K-fold cross-validation with pre-fold normalization; returns mean and std of MSE across folds."""
     data = data.sample(frac=1, random_state=42).reset_index(drop=True)
     fold_size = len(data) // k
     scores = []
